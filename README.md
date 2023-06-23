@@ -6,7 +6,7 @@ pip install django
 django-admin startproject config .
 
 verificar proyecto django que corra ...
-python manage.py runservice 
+python manage.py runserver
 
 docker build -t jriosf/docker-django .
 
