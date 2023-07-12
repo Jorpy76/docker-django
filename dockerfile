@@ -3,7 +3,9 @@ FROM python:3.11.4-alpine3.18
 
 ENV PYTHONUNBUFFERED=1
 
-WORKDIR /app
+# Create and set work directory called `app`
+RUN mkdir -p /code
+WORKDIR /code
 
 RUN  apk update \
 	&& apk add --no-cache gcc musl-dev postgresql-dev python3-dev libffi-dev \
